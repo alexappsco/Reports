@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ar" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 p-4 md:p-10">
+
+    <div class="max-w-3xl mx-auto bg-white rounded-3xl shadow-xl overflow-hidden p-6 md:p-8">
+        
+        <div class="flex justify-between items-center mb-6">
+            <h2 class="text-xl font-bold text-gray-800">Generate New Report</h2>
+           <button class=" hover:text-gray-600 "><img src="close.svg" alt=""></button>
+        </div>
+        <p class="text-gray-500 text-sm mb-8">Create custom reports with advanced filtering</p>
+
+        <div class="flex justify-between items-center mb-10 px-2">
+            <div class="flex flex-col items-center flex-1">
+                <div class="w-10 h-10 rounded-full border-2 border-[#495AFF] bg-[#495AFF] text-white flex items-center justify-center font-bold">01</div>
+                <span class="mt-2 text-xs font-semibold text-[#495AFF]">Type</span>
+            </div>
+            <div class="flex-1 h-0.5 bg-[#495AFF] mx-2"></div>
+            <div class="flex flex-col items-center flex-1">
+                <div class="w-10 h-10 rounded-full border-2 border-[#495AFF] text-[#495AFF] flex items-center justify-center font-bold bg-white">02</div>
+                <span class="mt-2 text-xs font-semibold text-[#495AFF]">Filters</span>
+            </div>
+            <div class="flex-1 h-0.5 bg-gray-200 mx-2"></div>
+            <div class="flex flex-col items-center flex-1">
+                <div class="w-10 h-10 rounded-full border-2 border-gray-300 text-gray-400 flex items-center justify-center">03</div>
+                <span class="mt-2 text-xs text-gray-400">Output</span>
+            </div>
+            <div class="flex-1 h-0.5 bg-gray-200 mx-2"></div>
+            <div class="flex flex-col items-center flex-1">
+                <div class="w-10 h-10 rounded-full border-2 border-gray-300 text-gray-400 flex items-center justify-center">04</div>
+                <span class="mt-2 text-xs text-gray-400">Generate</span>
+            </div>
+        </div>
+
+        <h3 class="text-lg font-bold text-gray-800 mb-1">Configure Report Filters</h3>
+        <p class="text-gray-500 text-sm mb-6">Set filters to customize your report data</p>
+
+        <div class="space-y-6 mb-8">
+            <div>
+                <p class="font-bold text-sm text-[#083A50] mb-3">Date Range</p>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div>
+                        <label class="block text-xs font-bold text-[#083A50] mb-1">From Date</label>
+                        <input type="text" placeholder="01/01/2026" class="w-full border border-gray-200 rounded-xl p-3 text-sm focus:outline-none focus:border-[#495AFF]">
+                    </div>
+                    <div>
+                        <label class="block text-xs font-bold text-[#083A50] mb-1">To Date</label>
+                        <input type="text" placeholder="31/01/2026" class="w-full border border-gray-200 rounded-xl p-3 text-sm focus:outline-none focus:border-[#495AFF]">
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <label class="block font-bold text-sm text-[#083A50] mb-2">User Type</label>
+                <select class="w-full border border-gray-200 rounded-xl p-3 text-sm text-gray-400 focus:outline-none focus:border-[#495AFF]">
+                    <option>All Status</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="flex justify-between items-center border-t pt-4">
+            <button class="text-sm font-semibold text-gray-500 hover:text-gray-700">Back</button>
+            <div class="flex gap-3">
+                <button class="px-5 py-2 border border-[#FF5F57] text-[#FF5F57] rounded-xl text-sm font-medium hover:bg-red-50 transition">Cancel</button>
+                <button class="px-5 py-2 bg-[#F1A68E] text-white rounded-xl text-sm font-medium hover:bg-[#e89073] transition">Next</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
